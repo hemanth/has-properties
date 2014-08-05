@@ -1,0 +1,36 @@
+{
+  "name": "has-properties",
+  "version": "0.1.0",
+  "description": "Checks if the given object has the required/mandatory properites.",
+  "license": "MIT",
+  "repository": "hemanth/has-properties",
+  "author": {
+    "name": "Hemanth.HM",
+    "email": "hemanth.hm@gmail.com",
+    "url": "http://h3manth.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "browser": "browserify -s $npm_package_name -o browser.js ."
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hasProperties",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "has",
+    "keys",
+    "properties"
+  ],
+  "devDependencies": {
+    "browserify": "^3.0.0",
+    "mocha": "*"
+  }
+}
