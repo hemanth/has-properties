@@ -1,7 +1,7 @@
 {
   "name": "has-properties",
   "version": "0.1.0",
-  "description": "Checks if the given object has the required/mandatory properites.",
+  "description": "Checks if the given object has the required/mandatory properties.",
   "license": "MIT",
   "repository": "hemanth/has-properties",
   "author": {
