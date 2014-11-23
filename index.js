@@ -7,7 +7,7 @@ var diff = function(a, b) {
 };
 
 module.exports = function(obj, keys) {
-  if (obj !== null && typeof obj === 'object') {
+  if (obj !== null && typeof obj !== 'object') {
     throw new Error('First argument must be an object.');
   }
   if (!Array.isArray(keys)) {
