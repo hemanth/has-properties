@@ -30,7 +30,7 @@
     "properties"
   ],
   "devDependencies": {
-    "browserify": "^6.3.2",
+    "browserify": "^8.1.0",
     "mocha": "*"
   }
 }
