@@ -25,17 +25,37 @@ describe("has key check", function() {
     assert(!hasProperties(negitive, mandatory));
   });
 
-  xit("should throw exception", function() {
+  it("should throw exception", function() {
     try {
       hasProperties('', []);
+      assert.fail();
     } catch (err) {
       assert.equal(err, 'Error: First argument must be an object.');
     }
   });
 
-  xit("should throw exception", function() {
+  it("should throw exception", function() {
     try {
-      hasProperties(' ', []);
+      hasProperties([], []);
+      assert.fail();
+    } catch (err) {
+      assert.equal(err, 'Error: First argument must be an object.');
+    }
+  });
+
+  it("should throw exception", function() {
+    try {
+      hasProperties(null, []);
+      assert.fail();
+    } catch (err) {
+      assert.equal(err, 'Error: First argument must be an object.');
+    }
+  });
+
+  it("should throw exception", function() {
+    try {
+      hasProperties(undefined, []);
+      assert.fail();
     } catch (err) {
       assert.equal(err, 'Error: First argument must be an object.');
     }
