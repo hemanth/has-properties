@@ -6,10 +6,15 @@ var diff = function(a, b) {
   });
 };
 
+var isObject = function(obj) {
+    return (typeof obj === 'object' && !Array.isArray(obj));
+};
+
 module.exports = function(obj, keys) {
-  if (obj !== null && typeof obj !== 'object') {
+  if (obj === null || !isObject(obj)) {
     throw new Error('First argument must be an object.');
   }
+
   if (!Array.isArray(keys)) {
     throw new Error('Second argument must be an array.');
   }
