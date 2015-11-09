@@ -32,5 +32,8 @@
   "devDependencies": {
     "browserify": "^8.1.0",
     "mocha": "*"
+  },
+  "dependencies": {
+    "1-liners": "^0.3.6"
   }
 }

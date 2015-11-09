@@ -1,17 +1,15 @@
 'use strict';
 
+var isObject = require('1-liners/isObject');
+
 var diff = function(a, b) {
   return a.filter(function(i) {
     return b.indexOf(i) < 0;
   });
 };
 
-var isObject = function(obj) {
-    return (typeof obj === 'object' && !Array.isArray(obj));
-};
-
 module.exports = function(obj, keys) {
-  if (obj === null || !isObject(obj)) {
+  if (!isObject(obj) || Array.isArray(obj)) {
     throw new Error('First argument must be an object.');
   }
 
