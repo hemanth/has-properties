@@ -34,6 +34,6 @@
     "mocha": "*"
   },
   "dependencies": {
-    "1-liners": "^0.3.6"
+    "1-liners": "^0.4.0"
   }
 }
